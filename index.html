@@ -8,12 +8,12 @@
     <style>
         body{
             background-color: #1E1E1E;
+;
         }
-        
         .corpo{
             display: grid;
             grid-template-columns: 30% 70%;
-            padding-left: 20%;
+            padding-left: 15%;
             padding-top: 5%;
             padding-bottom: 3%;
         }
@@ -22,7 +22,7 @@
             font-size: 48px;
             font-family: 'Hepta Slab';
             text-align: justify;
-            padding-right: 60%;
+            padding-right: 70%;
         }
         .imagem{
             display: grid;
@@ -32,12 +32,10 @@
             row-gap: 32px;
             
         }
-
         .img1{
             grid-row-start: 1;
             grid-row-end: span 2;
         }
-        
         .img4, .img8{
             grid-column-start: 1;
             grid-column-end: span 2;
@@ -46,17 +44,33 @@
             grid-row-start: 4;
             grid-row-end: span 2;
         }
-        
-    </style>
+        .img2{
+            border: solid 3px #ffff;
+        }
+        .text{
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 435px;
+            font-size: 20px;
+            line-height: 25px;
+            font-family: 'Hepta Slab';
+            color: #ffff;
+        }
+        @media(min-width: 500px) and (max-width:1000px){
+            body{display: block;}
+        }
+        </style>
 </head>
 <body>
     <div class="corpo">
         <div class="titulo">The —
             Abstract
-            Gallery</div>
+            Gallery
+        <div><img src="imgs/Vector1.png"><img src="imgs/Vector.png"></div>
+        </div>
         <div class="imagem">
             <img class="img1" src="imgs/img-here.png">
-            <img class="img2" src="imgs/img-here (1).png">
+            <img class="img2" src="imgs/img-here (1).png"><p class="text">Abstract Name</p>
             <img class="img3" src="imgs/img-here (2).png">
             <img class="img4" src="imgs/img-here (3).png">
             <img class="img5" src="imgs/img-here (4).png">
